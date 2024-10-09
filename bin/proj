@@ -1,0 +1,14 @@
+#!/usr/bin/env bb
+
+(ns proj (:require [lioss.main :as lioss]))
+
+(lioss/main
+ {:license        :mpl
+  :group-id       "lambdaisland"
+  :inception-year 2024
+  :description    "Kramdown repackaged as a clojure lib"})
+
+
+;; Local Variables:
+;; mode:clojure
+;; End:

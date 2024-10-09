@@ -25,12 +25,18 @@
          (.getCurrentContext (ruby))
          (->IRubyObjectArray args)))
 
-(def convert-rb
-  (delay
-    (rb-eval "require 'kramdown'"
-             "-> str { Kramdown::Document.new(str, parse_block_html: true, input: 'GFM', syntax_highlighter: nil, hard_wrap: false).to_html }")))
+(def parser
+  (memoize
+   (fn [flavor]
+     (rb-eval "require 'kramdown'"
+              (str
+               "-> str { Kramdown::Document.new(str, parse_block_html: true, input: '"
+               flavor
+               "', syntax_highlighter: nil, hard_wrap: false).to_html }")))))
 
-(defn convert [s]
+(defn parse-gfm
+  "Parse Github-flavored markdown to HTML string"
+  [s]
   (if s
-    (str (rb-call @convert-rb s))
+    (str (rb-call (parser "GFM") s))
     ""))
