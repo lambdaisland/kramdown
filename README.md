@@ -1,10 +1,10 @@
-# lambdaisland/kramdown 
+# kramdown
 
 <!-- badges -->
-[![cljdoc badge](https://cljdoc.org/badge/lambdaisland/)](https://cljdoc.org/d/lambdaisland/) [![Clojars Project](https://img.shields.io/clojars/v/lambdaisland/.svg)](https://clojars.org/lambdaisland/)
+[![cljdoc badge](https://cljdoc.org/badge/lambdaisland/kramdown)](https://cljdoc.org/d/lambdaisland/kramdown) [![Clojars Project](https://img.shields.io/clojars/v/lambdaisland/kramdown.svg)](https://clojars.org/lambdaisland/kramdown)
 <!-- /badges -->
 
-Kramdown (Ruby markdown parser) repackaged as a clojure lib
+Kramdown repackaged as a clojure lib
 
 ## Features
 
@@ -16,29 +16,22 @@ Kramdown (Ruby markdown parser) repackaged as a clojure lib
 To use the latest release, add the following to your `deps.edn` ([Clojure CLI](https://clojure.org/guides/deps_and_cli))
 
 ```
-lambdaisland/ {:mvn/version "0.0.0"}
+lambdaisland/kramdown {:mvn/version "0.0.0"}
 ```
 
 or add the following to your `project.clj` ([Leiningen](https://leiningen.org/))
 
 ```
-[lambdaisland/ "0.0.0"]
+[lambdaisland/kramdown "0.0.0"]
 ```
 <!-- /installation -->
-
-## Rationale
-
-Kramdown has some interesting extensions to add ids/classes/attributes to
-elements.
-
-## Usage
 
 <!-- opencollective -->
 ## Lambda Island Open Source
 
-Thank you!  is made possible thanks to our generous backers. [Become a
+Thank you! kramdown is made possible thanks to our generous backers. [Become a
 backer on OpenCollective](https://opencollective.com/lambda-island) so that we
-can continue to make  better.
+can continue to make kramdown better.
 
 <a href="https://opencollective.com/lambda-island">
 <img src="https://opencollective.com/lambda-island/organizations.svg?avatarHeight=46&width=800&button=false">
@@ -48,7 +41,7 @@ can continue to make  better.
 
 &nbsp;
 
- is part of a growing collection of quality Clojure libraries created and maintained
+kramdown is part of a growing collection of quality Clojure libraries created and maintained
 by the fine folks at [Gaiwan](https://gaiwan.co).
 
 Pay it forward by [becoming a backer on our OpenCollective](http://opencollective.com/lambda-island),
@@ -64,7 +57,7 @@ You can find an overview of all our different projects at [lambdaisland/open-sou
 <!-- contributing -->
 ## Contributing
 
-We warmly welcome patches to . Please keep in mind the following:
+We warmly welcome patches to kramdown. Please keep in mind the following:
 
 - adhere to the [LambdaIsland Clojure Style Guide](https://nextjournal.com/lambdaisland/clojure-style-guide)
 - write patches that solve a problem 
