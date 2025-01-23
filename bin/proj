@@ -4,7 +4,7 @@
 
 (lioss/main
  {:license        :mpl
-  :group-id       "lambdaisland"
+  :group-id       "com.lambdaisland"
   :inception-year 2024
   :description    "Kramdown repackaged as a clojure lib"})
 
